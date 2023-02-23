@@ -1,0 +1,27 @@
+<div class="main-container">
+  <div class="wisc-t">
+    <div class="wisc-menu">
+      Puntuación natural
+    </div>
+    <div *ngFor="let prueba of pruebasWisc; let indice=index" class="content-wis">
+      <div class="prueba">
+        {{ prueba.nombre }}
+      </div>
+      <div class="wtest-inputs score"><input class="n-input-text-median w-input-type" name="{{ prueba.indice }}" type="number" placeholder="{{ prueba.escalarDos }}" tabindex="{{indice}}"></div>
+      <div class="wtest-inputs scalar"> <input class="n-input-text-median w-input-type" name="{{prueba.indice}}_sc" type="number" placeholder="Escalar" [readOnly]="true" tabindex="-1"></div>
+    </div>
+    <div *ngIf="condition">
+      <div *ngFor="let prueba of alternasWisc" class="content-wis">
+        <div class="prueba">
+          {{ prueba.nombre }}
+        </div>
+        <div class="wtest-inputs score"><input class="n-input-text-median w-input-type" name="{{ prueba.indice }}" type="number" placeholder="{{ prueba.escalarDos }}"></div>
+        <div class="wtest-inputs scalar"> <input class="n-input-text-median w-input-type" name="{{prueba.indice}}_sc" type="number" placeholder="Escalar" [readOnly]="true"></div>
+      </div>
+    </div>
+  </div>
+<button>Calcular prueba</button>
+<button>Adicionales</button>
+<button (click)="condition = !condition">{{condition ? 'Quitar' : 'adicionar'}}</button>
+
+</div>

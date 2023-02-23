@@ -1,0 +1,277 @@
+body,html{
+  margin: 0;
+  padding: 0;
+}
+
+:root{
+  font-size: 20px;
+}
+
+.only-read {
+  background-color: #c8c8c8ff;
+}
+
+.wisc-t {
+  display: inline-flex;
+  flex-direction: row;
+  position: relative;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  background-color: #f0f0f0;
+}
+
+.zona-logo-wisc{
+  display: inline-flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: 30%;
+  /*background-color: #d7d7d7ff;
+  background-color: blue;
+  */
+}
+
+.logo-wisc{
+  display: flex;
+  position:fixed;
+  justify-content: center;
+  align-items: center;
+  transform: translate(0,-50%);
+  height: 212px;
+  width: 27%;
+  font-size: 73px;
+  top: 50%;
+  background-color: #c1c1c1ff;
+}
+
+.main-container{
+  display: inline-flex;
+  flex-direction: row;
+  position: relative;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  background-color: #d7d7d7ff;
+
+}
+
+.w-input-type{
+  text-align: center;
+}
+
+.hidden-object{
+  display: none;
+}
+/*servicio webb*/
+@media (min-width: 468px) {
+  .content-wis {
+    display: grid;
+    grid-template-columns: repeat(10,10%);
+    grid-template-rows: repeat(1,50px);
+    position: relative;
+    width: 70%;
+    margin-left: 20px;
+    min-width: 962px;
+  }
+
+  .wtitle-table{
+    margin-top: 10px;
+  }
+  .w-input-type {
+    width: 5rem;
+    margin-right: 0.54rem;
+    border: 0pc;
+  }
+  .w-test-inputs{
+    margin-right: 0.5rem;
+  }
+
+  .wisc-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    font-size: 15px;
+    background-color: #eaeaea;
+    text-align: center;
+  }
+  .prueba{
+    grid-column: 1/4;
+    grid-row: 1/4;
+    align-self: center;
+  }
+  .score{
+    display: flex;
+    grid-column: 4/7;
+    grid-row: 1/2;
+    align-items: center;
+  }
+  .scalar{
+    grid-column: 5/6;
+    grid-row: 1/2;
+    align-self: center;
+  }
+
+  .one{
+    grid-column: 6/7;
+    grid-row: 1/2;
+    align-self: center;
+  }
+
+  .two{
+    grid-column: 7/8;
+    grid-row: 1/2;
+    align-self: center;
+  }
+  .three{
+    grid-column: 8/9;
+    grid-row: 1/2;
+    align-self: center;
+  }
+  .four{
+    grid-column: 9/10;
+    grid-row: 1/2;
+    align-self: center;
+  }
+  .five{
+    grid-column: 10/11;
+    grid-row: 1/2;
+    align-self: center;
+  }
+  .first{
+    color: #8C8C8C;
+    border: 0px;
+    background-color: #8C8C8C;
+  }
+  .n-input-text-median.w-input-type {
+    border-bottom: 1px solid var(--color-marron);
+  }
+
+}
+
+/****************************************celular***************************************************/
+@media(max-width: 468px) {
+
+  .content-wis{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(1,70px) ;
+    margin-left: 6px;
+    margin-right: 6px;
+    /*border-bottom: 1px solid rgb(255, 255, 255);*/
+    font-size: 14px;
+  }
+
+
+  .score{
+    display: flex;
+    grid-column: 4/7;
+    grid-row: 1/2;
+    align-items: center;
+  }
+
+  .w-test-inputs{
+    margin-right: 0.5rem;
+  }
+
+  .zona-logo-wisc{
+    display: none;
+    width: 0px;
+    height: 0px;
+  }
+
+  .wisc-t {
+    display: inline-flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+  }
+
+  .wtest-box {
+    width: 40%;
+    height: 100%;
+  }
+
+  .wtest-inputs {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    /*background-color: #0A4150;*/
+  }
+
+  .wtitle-table {
+    display: flex;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    /*background-color: #8C8C8C;*/
+  }
+
+  .wsub-test {
+    display: inline-flex;
+    position: relative;
+    height: 100%;
+    width: 98%;
+    margin: 5px;
+    color: #1f2937ff;
+    align-items: center;
+  }
+
+  .wmargin-movil {
+    margin-bottom: 10px;
+  }
+
+  .marg-left {
+    margin-left: 5px;
+  }
+
+  .wisc-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    text-align: center;
+    font-weight: bold;
+
+  }
+
+  .marg-top {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  .wtest-inputs .n-bg-gris{
+    display: none;
+  }
+
+  .logo-wisc{
+    display: none;
+  }
+  .w-input-type{
+    width: 100%;
+    margin-left: 30px;
+  }
+
+  .prueba{
+    grid-column: 1/4;
+    grid-row: 1/4;
+    align-self: center;
+  }
+  .scalar{
+    display: none;
+  }
+  .hidden-object{
+    display: none;
+  }
+  .one{display: none;}
+  .two{display: none;}
+  .three{display: none;}
+  .four{display: none;}
+  .five{display: none;}
+}
